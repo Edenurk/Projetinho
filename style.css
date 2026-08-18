@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #1f2937;
+}
+
+h1 {font-weight: bold; 
+    background: linear-gradient(to right, #fc72ff, #8f68ff, #68b0ff, #68ffb0, #f0ff68,
+     #ff8f68, #ff72fc);
+     background-size: 200%;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation: animate-gradient 2.5s linear infinite;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+}
+@keyframes animate-gradient {
+    to {background-position: 200%;}
+}
+
+
+header p {
+    color: #68b0ff;
+     position: absolute; top: 80px; left: 650px;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 150px);
+}
+
+.painel {
+    width: 250px;
+    background: #1f2937;
+    padding: 25px;
+}
+
+.painel h2 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.painel h2:first-child {
+    margin-top: 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #374151;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+button:hover {
+    background: #4b5563;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#canvas-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    background: #1f2937;
+    color: #68b0ff;
+}
